@@ -77,6 +77,10 @@ $if(linestretch)$
 \usepackage{setspace}
 \setstretch{$linestretch$}
 $endif$
+\newlength{\saveparindent}
+\setlength{\saveparindent}{\parindent}
+\raggedright
+\setlength{\parindent}{\saveparindent}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
