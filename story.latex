@@ -8,8 +8,8 @@ $endif$$endif$%
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$if(beamer)$ignorenonframetext,$if(handout)$handout,$endif$$if(aspectratio)$aspectratio=$aspectratio$,$endif$$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 \renewenvironment{quote}{%
    \list{}{%
-     \it
-     \leftmargin2em   % left margin
+     % \it % italics for block quotes
+     \leftmargin.5in   % left margin
      \rightmargin0em    % right margin
    }
    \item\relax
